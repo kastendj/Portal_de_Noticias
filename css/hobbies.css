@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.introducao-hobbies {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.introducao-hobbies h2 {
+  margin-bottom: 0.75rem;
+  font-size: 2rem;
+}
+
+.introducao-hobbies p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.titulo-galeria {
+  flex-basis: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.galeria-hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.cartao-hobby {
+  flex: 1 1 280px;
+  overflow: hidden;
+  border: 1px solid #d8d8d8;
+  border-radius: 0.75rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-hobby figure {
+  margin: 0;
+}
+
+.cartao-hobby img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.cartao-hobby figcaption {
+  padding: 0.5rem 1rem;
+  background-color: #f1f1f1;
+  color: #555;
+  font-size: 0.875rem;
+}
+
+.conteudo-cartao {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.conteudo-cartao h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.conteudo-cartao p {
+  line-height: 1.6;
+}
+
+.data-publicacao {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: #666;
+  font-size: 0.875rem;
+}

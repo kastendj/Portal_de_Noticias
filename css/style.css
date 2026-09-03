@@ -4,26 +4,44 @@ main {
   padding: 0 20px;
 }
 
-section > header {
-  margin-bottom: 25px;
+main > section {
+  border: 1px solid orange;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+article {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+article header {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-section > header h3 {
+article header h3 {
   color: #173b82;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  font-size: 32px;
+  font-size: 26px;
+  margin: 10px 0;
 }
 
-main section {
-  border: 1px solid orange;
-  border-radius: 10px;
-  margin: 10px;
+article p {
+  line-height: 1.6;
+  margin-bottom: 12px;
 }
 
-/* css para minha figura */
+/* Tags de código dentro do texto */
+article code {
+  background-color: #f4f4f4;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: bold;
+}
 
+/* Figura e Imagem */
 .imagem-publicacao {
   margin: 20px 0;
 }
@@ -32,6 +50,7 @@ main section {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 6px 6px 0 0;
 }
 
 .imagem-publicacao figcaption {
@@ -40,14 +59,7 @@ main section {
   font-size: 0.9em;
   padding: 10px;
   text-align: center;
-}
-
-article img {
-  width: 100%;
-  margin: 15px 0;
-}
-article p {
-  line-height: 1.6;
+  border-radius: 0 0 6px 6px;
 }
 
 .categoria {
@@ -58,7 +70,7 @@ article p {
 
 .subtitulo {
   color: #666;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 article footer {
@@ -68,4 +80,5 @@ article footer {
   margin-top: 20px;
   padding-top: 10px;
 }
+
 

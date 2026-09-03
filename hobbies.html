@@ -1,31 +1,188 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hobbies</title>
+    <title>Hobbies - Meu Portal de Notícias</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/hobbies.css" />
   </head>
   <body>
     <header>
       <h1>Meu Portal de Notícias</h1>
-      <p>Progrmação, experiencias e Cotidiano</p>
+      <p>Programação, Experiências e Cotidiano</p>
 
       <nav>
         <ul>
-          <ul>
-            <li><a href="index.html">Programação</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="perfil.html">Sobre Mim</a></li>
-          </ul>
+          <li><a href="index.html">Programação</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="perfil.html">Sobre Mim</a></li>
         </ul>
       </nav>
-
-      <footer>
-        <p>Projeto desenvolvido na disciplina de desenvolvimento Web I</p>
-        <p>IFC - Campus Araquari</p>
-      </footer>
     </header>
+
+    <main class="container">
+      <section class="introducao-hobbies">
+        <h2>Meus Hobbies</h2>
+        <p>
+          Nesta página serão veiculados os meus hobbies e atividades de lazer.
+        </p>
+      </section>
+
+      <section class="galeria-hobbies">
+        <h2 class="titulo-galeria">
+          Atividades que fazem parte da minha rotina
+        </h2>
+
+        <!-- Card 1: Esportes -->
+        <article class="cartao-hobby">
+          <figure>
+            <img src="./img/hobbies/esportes.avif" alt="Prática de Esportes" />
+            <figcaption>
+              Esportes para relaxar depois de uma semana de programação.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Futebol e Prática de Esportes</h3>
+            <p>
+              Praticar esportes ao ar livre ajuda a manter a saúde em dia e a
+              mente focada.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Leitura -->
+        <article class="cartao-hobby">
+          <figure>
+            <img src="./img/hobbies/leitura.avif" alt="Hábito da Leitura" />
+            <figcaption>
+              Explorando novos mundos através de livros de ficção e tecnologia.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Leitura e Literatura</h3>
+            <p>
+              Dedicar um tempo diário para leitura expande o vocabulário e traz
+              novos conhecimentos.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Música -->
+        <article class="cartao-hobby">
+          <figure>
+            <img
+              src="./img/hobbies/instrumentos.jpg"
+              alt="Tocando Instrumentos Musicais"
+            />
+            <figcaption>
+              Momentos de criação e relaxamento tocando instrumentos e ouvindo
+              sons.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Música e Instrumentos</h3>
+            <p>
+              Tocar violão e descobrir novas bandas é a melhor forma de se
+              desconectar da rotina.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 4: Fotografia -->
+        <article class="cartao-hobby">
+          <figure>
+            <img
+              src="./img/hobbies/paisagem.webp"
+              alt="Fotografia de Paisagens"
+            />
+            <figcaption>
+              Registrando momentos únicos, paisagens e detalhes urbanos.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Fotografia e Paisagens</h3>
+            <p>
+              Capturar cenários naturais e o cotidiano urbano através das lentes
+              de uma câmera.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 5: Culinária -->
+        <article class="cartao-hobby">
+          <figure>
+            <img
+              src="./img/hobbies/gastronomia.jpeg"
+              alt="Cozinhando Novas Receitas"
+            />
+            <figcaption>
+              Experimentando novos sabores e receitas especiais no fim de
+              semana.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Culinária e Gastronomia</h3>
+            <p>
+              Aprender novas receitas é um exercício de paciência, criatividade
+              e sabor.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 6: Games -->
+        <article class="cartao-hobby">
+          <figure>
+            <img src="./img/hobbies/games.jpg" alt="Jogando Videogames" />
+            <figcaption>
+              Estratégia, cooperação e diversão em jogos digitais.
+            </figcaption>
+          </figure>
+
+          <div class="conteudo-cartao">
+            <h3>Jogos e Videogames</h3>
+            <p>
+              Aventuras digitais que estimulam o raciocínio rápido e
+              proporcionam momentos com amigos.
+            </p>
+            <p class="data-publicacao">
+              Publicado em
+              <time datetime="2026-08-28"> 28 de agosto de 2026 </time>
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>Projeto desenvolvido na disciplina de Desenvolvimento Web I</p>
+      <p>IFC - Campus Araquari</p>
+    </footer>
   </body>
 </html>
