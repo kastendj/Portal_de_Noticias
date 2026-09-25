@@ -1,0 +1,104 @@
+.pagina-noticia {
+  width: 90%;
+  max-width: 820px;
+  margin: 2rem auto;
+}
+
+.noticia-completa {
+  background-color: var(--cor-cartao, #fff);
+  border: 1px solid var(--cor-borda, #ccc);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.noticia-completa > header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.noticia-completa > header h2 {
+  color: var(--cor-primaria, #173b82);
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.noticia-completa .subtitulo {
+  color: #666;
+  font-size: 1rem;
+}
+
+.noticia-completa .data-publicacao {
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.voltar {
+  margin-top: 1.5rem;
+}
+
+.voltar a {
+  color: var(--cor-primaria, #173b82);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.voltar a:hover,
+.voltar a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Formulário de avaliação — sobrescreve o article footer padrão */
+.noticia-completa footer.avaliacao {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  color: var(--cor-texto, #333);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.avaliacao h2 {
+  color: var(--cor-primaria, #173b82);
+  margin-bottom: 1rem;
+}
+
+.avaliacao form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.avaliacao fieldset {
+  border: 1px solid var(--cor-borda, #ccc);
+  border-radius: var(--raio, 8px);
+  padding: 0.75rem 1rem;
+}
+
+.avaliacao legend {
+  font-weight: bold;
+  color: var(--cor-primaria, #173b82);
+  padding: 0 0.4rem;
+}
+
+.avaliacao label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 520px) {
+  .noticia-completa {
+    padding: 1.25rem;
+  }
+
+  .noticia-completa > header h2 {
+    font-size: 1.5rem;
+  }
+
+  .avaliacao label {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0.35rem;
+  }
+}

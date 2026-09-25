@@ -1,12 +1,31 @@
+/* ===== Variáveis globais ===== */
+:root {
+  --cor-primaria: #173b82;
+  --cor-primaria-escura: #102563;
+  --cor-destaque: #ffb703;
+  --cor-fundo: #f4f4f4;
+  --cor-texto: #333;
+  --cor-borda: #ccc;
+  --cor-cartao: #ffffff;
+  --raio: 8px;
+  --espaco: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 body > header {
-  background-color: #173b82;
+  background-color: var(--cor-primaria);
   color: #fff;
   text-align: center;
   padding: 25px;
@@ -21,7 +40,7 @@ body > header > p {
   padding: 10px;
 }
 
-/* Criando Estilos para o meu menu */
+/* Menu */
 nav > ul {
   padding: 0;
   list-style: none;
@@ -38,14 +57,74 @@ nav a {
   font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus-visible {
   text-decoration: underline;
   color: yellow;
 }
 
+nav a[aria-current="page"] {
+  color: yellow;
+  text-decoration: underline;
+}
+
 body footer {
-  background-color: #102563;
+  background-color: var(--cor-primaria-escura);
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+/* ===== Formulários (global) ===== */
+form .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #bbb;
+  border-radius: var(--raio);
+  font: inherit;
+  background-color: #fff;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--cor-destaque);
+  outline-offset: 2px;
+}
+
+fieldset {
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--cor-primaria);
+  padding: 0 0.4rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  background-color: var(--cor-primaria);
+  color: #fff;
+  border: none;
+  border-radius: var(--raio);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--cor-primaria-escura);
 }

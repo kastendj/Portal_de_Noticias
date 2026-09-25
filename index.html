@@ -11,20 +11,62 @@
 
   <body>
     <header>
-      <h1>Meu Portal de Notícias</h1>
+      <h1>Portal de Notícias</h1>
       <p>Programação, Experiências e Cotidiano</p>
 
       <nav>
         <ul>
-          <li><a href="index.html">Programação</a></li>
+          <li><a href="index.html" aria-current="page">Programação</a></li>
           <li><a href="hobbies.html">Hobbies</a></li>
           <li><a href="perfil.html">Sobre Mim</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
+      <!-- Filtro de notícias -->
+      <section class="filtro-noticias">
+        <h2>Filtrar notícias</h2>
+
+        <form method="get" action="index.html">
+          <div class="campo">
+            <label for="busca">Pesquisar:</label>
+            <input
+              type="search"
+              id="busca"
+              name="busca"
+              placeholder="Digite uma palavra-chave"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+              <option value="">Todas</option>
+              <option value="desenvolvimento-web">Desenvolvimento Web</option>
+              <option value="banco-de-dados">Banco de Dados</option>
+              <option value="seguranca-redes">Segurança de Redes</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="tecnologia">Tecnologia:</label>
+            <select id="tecnologia" name="tecnologia">
+              <option value="">Todas</option>
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+              <option value="javascript">JavaScript</option>
+              <option value="mysql">MySQL</option>
+            </select>
+          </div>
+
+          <button type="submit">Filtrar notícias</button>
+        </form>
+      </section>
+
+      <!-- Notícia 1 -->
       <section>
         <article>
           <header>
@@ -59,12 +101,15 @@
             <p>
               Publicado em:
               <time datetime="2026-08-21T21:06"
-                >21 de agosto de 2026 às 21:06</time>
+                >21 de agosto de 2026 às 21:06</time
+              >
             </p>
+            <a href="./noticias/noticia-html.html">Ler mais...</a>
           </footer>
         </article>
       </section>
 
+      <!-- Notícia 2 -->
       <section>
         <article>
           <header>
@@ -102,10 +147,12 @@
                 >19 de agosto de 2026 às 21:06</time
               >
             </p>
+            <a href="./noticias/noticia-banco-dados.html">Ler mais...</a>
           </footer>
         </article>
       </section>
 
+      <!-- Notícia 3 -->
       <section>
         <article>
           <header>
@@ -141,6 +188,7 @@
                 >19 de agosto de 2026 às 21:06</time
               >
             </p>
+            <a href="./noticias/noticia-html.html">Ler mais...</a>
           </footer>
         </article>
       </section>

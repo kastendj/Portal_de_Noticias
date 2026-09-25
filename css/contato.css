@@ -1,0 +1,57 @@
+.pagina-contato {
+  width: 90%;
+  max-width: 760px;
+  margin: 2rem auto;
+}
+
+.contato {
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid var(--cor-borda, #ccc);
+  border-radius: var(--raio, 8px);
+}
+
+.contato > header {
+  margin-bottom: 2rem;
+}
+
+.contato > header h1 {
+  font-size: 2rem;
+  margin-top: 0.75rem;
+  color: var(--cor-primaria, #173b82);
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contato .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contato textarea {
+  resize: vertical;
+}
+
+.contato fieldset {
+  border: 1px solid var(--cor-borda, #ccc);
+  border-radius: var(--raio, 8px);
+  padding: 0.75rem 1rem;
+}
+
+.contato fieldset label {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+@media (max-width: 520px) {
+  .contato fieldset label {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 0.4rem;
+  }
+}

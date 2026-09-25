@@ -1,104 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil do Estudante - Portal de Notícias</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/perfil.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Estudante - Portal de Notícias</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/perfil.css">
 </head>
 <body>
 
-    <!-- Cabeçalho do Portal de Notícias -->
-    <header class="site-header">
-        <h1>Portal de Notícias</h1>
-        <nav class="site-nav">
-            <ul>
-                <li><a href="index.html">Programação</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="perfil.html" class="ativo">Sobre Mim</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Portal de Notícias</h1>
+    <p>Programação, Experiências e Cotidiano</p>
 
-    <!-- Conteúdo Principal -->
-    <main class="main-perfil">
-        
-        <!-- Cartão de Apresentação / Capa e Foto -->
-        <section class="card-perfil-topo">
-            <div class="container-capa">
-                <img src="img/hobbies/paisagem.webp" alt="Imagem de capa do perfil" class="imagem-capa">
-            </div>
-            <div class="container-info-principal">
-                <figure class=" figura-avatar">
-                    <img src="img/hobbies/games.jpg" alt="Fotografia de perfil do estudante" class="imagem-avatar">
-                </figure>
-                <div class="informacoes-perfil">
-                    <h2>Kasten Corrêa</h2>
-                    <p class="area-atuacao">Estudante de Desemvolvimento WEB I</p>
-                    <p class="localizacao">Araquari, Santa Catarina</p>
-                    <div class="badges-tecnologias">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>Git</span>
-                    </div>
-                </div>
-            </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Programação</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="perfil.html" aria-current="page">Sobre Mim</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-perfil">
+    
+    <section class="card-perfil-topo">
+      <div class="container-capa">
+        <img src="img/hobbies/paisagem.webp" alt="Imagem de capa do perfil" class="imagem-capa">
+      </div>
+      <div class="container-info-principal">
+        <figure class="figura-avatar">
+          <img src="img/hobbies/games.jpg" alt="Fotografia de perfil do estudante" class="imagem-avatar">
+        </figure>
+        <div class="informacoes-perfil">
+          <h2>Kasten Corrêa</h2>
+          <p class="area-atuacao">Estudante de Desenvolvimento WEB I</p>
+          <p class="localizacao">Araquari, Santa Catarina</p>
+          <div class="badges-tecnologias">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-colunas">
+      
+      <div class="coluna-principal">
+        <section class="card">
+          <h3>Sobre mim</h3>
+          <p>Olá! Sou estudante de Redes de computadores e desenvolvimento web. Busco constantemente aprender novas ferramentas para criar aplicações eficientes, responsivas e focadas na boa experiência do usuário.</p>
         </section>
 
-        <!-- Layout em Duas Colunas usando Flexbox -->
-        <div class="container-colunas">
-            
-            <!-- Coluna Principal -->
-            <div class="coluna-principal">
-                <section class="card">
-                    <h3>Sobre mim</h3>
-                    <p>Olá! Sou estudante de Redes de computadores e desenvolvimento web. Busco constantemente aprender novas ferramentas para criar aplicações eficientes, responsivas e focadas na boa experiência do usuário.</p>
-                </section>
+        <section class="card">
+          <h3>Formação e Trajetória</h3>
+          <article class="item-trajetoria">
+            <h4>Redes de Computadores e Desenvolvimento Web I</h4>
+            <p>IFC - Araquari | 2024 - 2026</p>
+            <p>Foco em desenvolvimento web e programação em Python</p>
+          </article>
+        </section>
+      </div>
 
-                <section class="card">
-                    <h3>Formação e Trajetória</h3>
-                    <article class="item-trajetoria">
-                        <h4>Redes de Computadores e Desenvolvimento Web I</h4>
-                        <p>IFC - Araquari | 2024 - 2026</p>
-                        <p>Foco em desenvolvimento web e programação em Python</p>
-                    </article>
-                </section>
-            </div>
+      <aside class="coluna-lateral">
+        <section class="card">
+          <h3>Competências</h3>
+          <div class="lista-tags">
+            <span>HTML semântico</span>
+            <span>Flexbox</span>
+            <span>Design Responsivo</span>
+            <span>CSS3</span>
+          </div>
+        </section>
 
-            <!-- Coluna Lateral -->
-            <aside class="coluna-lateral">
-                <section class="card">
-                    <h3>Competências</h3>
-                    <div class="lista-tags">
-                        <span>HTML semântico</span>
-                        <span>Flexbox</span>
-                        <span>Design Responsivo</span>
-                        <span>CSS3</span>
-                    </div>
-                </section>
+        <section class="card">
+          <h3>Interesses</h3>
+          <div class="lista-tags">
+            <span>Inteligência Artificial</span>
+            <span>Programa Python</span>
+            <span>Node</span>
+            <span>Open Source</span>
+          </div>
+        </section>
+      </aside>
 
-                <section class="card">
-                    <h3>Interesses</h3>
-                    <div class="lista-tags">
-                        <span>Inteligência Artificial</span>
-                        <span>Programa Python</span>
-                        <span>Node</span>
-                        <span>Open Source</span>
-                    </div>
-                </section>
-            </aside>
+    </div>
 
-        </div>
+  </main>
 
-    </main>
-
-    <!-- Rodapé Compartilhado -->
-    <footer class="site-footer">
-        <p>&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Portal de Notícias. Todos os direitos reservados.</p>
+  </footer>
 
 </body>
 </html>
